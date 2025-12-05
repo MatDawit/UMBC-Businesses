@@ -19,7 +19,7 @@ function Navbar() {
             <Link to="/" className="navbar-link">Home</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/business/1" className="navbar-link">Sample Business</Link>
+            <Link to="/find-businesses" className="navbar-link">Find Businesses</Link>
           </li>
           <li className="navbar-item">
             <Link to="/contact" className="navbar-link">Contact Us</Link>
