@@ -62,6 +62,11 @@
     height: auto;
     padding: 1rem;
     gap: 1rem;
+    align-items: stretch;      /* allow left alignment */
+  }
+
+  .navbar-brand {
+    align-self: flex-start;    /* keep logo at top-left */
   }
 
   .navbar-menu {
@@ -69,4 +74,20 @@
     justify-content: center;
     gap: 0.5rem;
   }
+}
+
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0;              /* no extra spacing since it's just an image now */
+  text-decoration: none;
+}
+
+/* Logo sizing: fits inside the 70px navbar cleanly */
+.navbar-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
