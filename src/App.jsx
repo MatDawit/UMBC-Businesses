@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Business from './pages/Business';
+import FindBusinesses from './pages/FindBusinesses';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/find-businesses" element={<FindBusinesses />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/business/:id" element={<Business />} />
         </Routes>
