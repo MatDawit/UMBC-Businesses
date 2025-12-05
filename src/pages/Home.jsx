@@ -1,10 +1,9 @@
 import SEO from '../components/SEO';
 import BusinessCard from '../components/BusinessCard';
-import { businesses, getAllCategories } from '../data/businesses';
+import { businesses } from '../data/businesses';
 import './Home.css';
 
 function Home() {
-  const categories = getAllCategories();
 
   return (
     <div className="home">
@@ -20,17 +19,6 @@ function Home() {
           <p className="hero-subtitle">
             Discover all the amazing businesses and services available on the UMBC campus
           </p>
-        </div>
-      </section>
-
-      <section className="categories">
-        <div className="container">
-          <h2 className="section-title">Browse by Category</h2>
-          <div className="category-tags">
-            {categories.map((category) => (
-              <span key={category} className="category-tag">{category}</span>
-            ))}
-          </div>
         </div>
       </section>
 
