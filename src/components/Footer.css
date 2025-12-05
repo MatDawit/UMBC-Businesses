@@ -17,6 +17,15 @@
   text-align: left;
 }
 
+.footer-section:first-child {
+  text-align: center;
+}
+
+.footer-section:nth-child(2),
+.footer-section:nth-child(3) {
+  text-align: center;
+}
+
 .footer-title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
