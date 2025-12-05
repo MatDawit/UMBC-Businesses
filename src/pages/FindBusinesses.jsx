@@ -54,18 +54,6 @@ function FindBusinesses() {
 
       <section className="find-section">
         <div className="container">
-          {/* Search Bar */}
-          <div className="search-container">
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Search by business name..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              aria-label="Search businesses by name"
-            />
-          </div>
-
           {/* Category Filters */}
           <div className="filters-container">
             <h2 className="filters-title">Filter by Category</h2>
@@ -83,6 +71,18 @@ function FindBusinesses() {
                 </button>
               ))}
             </div>
+          </div>
+
+          {/* Search Bar */}
+          <div className="search-container">
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search by business name..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              aria-label="Search businesses by name"
+            />
           </div>
 
           {/* Results */}
