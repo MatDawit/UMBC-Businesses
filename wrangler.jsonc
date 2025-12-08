@@ -1,0 +1,6 @@
+{
+  "name": "businesses",
+  "compatibility_date": "2025-12-08",
+  "main": "worker.js",
+  "assets": { "directory": "./dist" }
+}
